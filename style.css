@@ -293,10 +293,6 @@ body {
 
 .contact-info p { font-size: 18px; }
 
-/* Za mobilne uređaje da se poređa jedno ispod drugog */
-@media (max-width: 768px) {
-  .contact-wrapper { grid-template-columns: 1fr; }
-}
 
 /* --- NOVI STIL ZA DETALJE PROIZVODA --- */
 
@@ -364,36 +360,42 @@ body {
   background: #333;
 }
 
-/* Prilagođavanje za telefone (ako je ekran uzan, slika ide iznad teksta) */
+/* --- RESPONSIVE DIZAJN (SVE NA JEDNOM MESTU) --- */
+
 @media (max-width: 768px) {
+  /* Podešavanje za detalje proizvoda */
   .detail-wrapper {
     grid-template-columns: 1fr;
     gap: 30px;
   }
-} 
 
-/* Prilagođavanje za ekrane telefona - ispod 600px */
+  /* Podešavanje za kontakt sekciju */
+  .contact-wrapper { 
+    grid-template-columns: 1fr; 
+  }
+}
+
 @media (max-width: 600px) {
+  /* Da proizvodi idu jedan ispod drugog */
   .products-grid {
-    grid-template-columns: 1fr; /* Proizvodi jedan ispod drugog */
+    grid-template-columns: 1fr !important;
+    gap: 20px;
   }
 
-  .product-card {
-    margin-bottom: 20px;
-    padding: 10px;
-  }
-
-  h1 {
-    font-size: 28px !important;
-  }
-
+  /* Da navigacija ne bude zbijena */
   .nav-links {
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 15px;
     padding: 10px;
+    justify-content: center;
   }
-  
+
+  /* Smanjivanje naslova */
+  .hero-title {
+    font-size: 40px !important;
+  }
+
   .container {
-    padding: 0 10px;
+    padding: 0 15px;
   }
 }
