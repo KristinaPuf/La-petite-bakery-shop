@@ -370,29 +370,29 @@ body {
     grid-template-columns: 1fr;
     gap: 30px;
   }
+} 
 
-/* Prilagođavanje za ekrane telefona */
+/* Prilagođavanje za ekrane telefona - ispod 600px */
 @media (max-width: 600px) {
-  
-  /* Smanjujemo razmak oko kartica proizvoda */
+  .products-grid {
+    grid-template-columns: 1fr; /* Proizvodi jedan ispod drugog */
+  }
+
   .product-card {
     margin-bottom: 20px;
     padding: 10px;
   }
 
-  /* Smanjujemo naslove da ne bi "bežali" iz ekrana */
   h1 {
     font-size: 28px !important;
   }
 
-  /* Popravljamo navigaciju da se ne preklapa */
-  nav {
+  .nav-links {
     flex-wrap: wrap;
-    justify-content: center;
     gap: 10px;
+    padding: 10px;
   }
   
-  /* Smanjujemo padding na glavnom kontejneru */
   .container {
     padding: 0 10px;
   }
