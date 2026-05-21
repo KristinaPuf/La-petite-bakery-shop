@@ -370,4 +370,30 @@ body {
     grid-template-columns: 1fr;
     gap: 30px;
   }
+
+/* Prilagođavanje za ekrane telefona */
+@media (max-width: 600px) {
+  
+  /* Smanjujemo razmak oko kartica proizvoda */
+  .product-card {
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+
+  /* Smanjujemo naslove da ne bi "bežali" iz ekrana */
+  h1 {
+    font-size: 28px !important;
+  }
+
+  /* Popravljamo navigaciju da se ne preklapa */
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  /* Smanjujemo padding na glavnom kontejneru */
+  .container {
+    padding: 0 10px;
+  }
 }
