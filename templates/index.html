@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Petite Bakery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <header class="hero-section" id="home">
+    <nav class="navbar">
+      <div class="nav-links">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#products">PRODUCTS</a>
+        <a href="#contact">CONTACT</a>
+      </div>
+    </nav>
+    <div class="hero-content">
+      <p class="hero-subtitle">WELCOME TO</p>
+      <h1 class="hero-title">LA PETITE BAKERY</h1>
+    </div>
+  </header>
+
+  <section id="about" class="about-section">
+  <div class="container">
+    <h2>Our Story</h2>
+    <p>
+      It all began years ago in a small, cozy kitchen, filled with the aroma of freshly baked dough and that first morning coffee. 
+      At <strong>La Petite Bakery</strong>, we don’t believe in mass production. We believe in patience, the skill of hands that knead, 
+      the finest quality butter, and the small, invisible details that turn every pastry into a masterpiece.
+    </p>
+    <p>
+      Our mission is simple: to bring a spark of joy to your day, every single morning. Whether it's our flaky croissants 
+      that whisk you away to Paris for a moment, or our rich raspberry cakes that bring back the fondest childhood memories—
+      everything that leaves our oven is crafted with love, with zero compromises on quality.
+    </p>
+    <p>
+      <em>Welcome to our little world of sweet delights. We invite you to savor flavors created to be remembered.</em>
+    </p>
+  </div>
+</section>
+
+  <section id="products" class="products-section">
+      <h2 class="section-title"> OUR PRODUCTS:</h2> 
+    <div class="products-grid">
+
+      <div class="product-card">
+        <div class="product-image-box"><img src="{{ url_for('static', filename='images/p1.jpeg') }}" alt="Croissant"></div>
+        <div class="product-info">
+          <h3>Croissant</h3>
+          <p class="product-price">150 rsd</p>
+          <a href="/croissant" class="product-btn">VIEW DETAILS</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image-box"><img src="{{ url_for('static', filename='images/p2.jpeg') }}" alt="Cupcake"></div>
+        <div class="product-info">
+          <h3>Cupcake</h3>
+          <p class="product-price">200 rsd</p>
+          <a href="/cupcake" class="product-btn">VIEW DETAILS</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image-box"><img src="{{ url_for('static', filename='images/p3.jpeg') }}" alt="Macarons"></div>
+        <div class="product-info">
+          <h3>Macarons</h3>
+          <p class="product-price">120 rsd</p>
+          <a href="/macarons" class="product-btn">VIEW DETAILS</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image-box"><img src="{{ url_for('static', filename='images/p4.jpeg') }}" alt="Raspberry Cake"></div>
+        <div class="product-info">
+          <h3>Raspberry Cake</h3>
+          <p class="product-price">450 rsd</p>
+          <a href="/cake" class="product-btn">VIEW DETAILS</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image-box"><img src="{{ url_for('static', filename='images/p5.jpeg') }}" alt="Biscuits"></div>
+        <div class="product-info">
+          <h3>Biscuits</h3>
+          <p class="product-price">100 rsd</p>
+          <a href="/biscuits" class="product-btn">VIEW DETAILS</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+  <span class="badge">BEST SELLER</span> 
+  
+  <div class="product-image-box">
+    <img src="{{ url_for('static', filename='images/p6.jpeg') }}" alt="Artisan Bread">
+  </div>
+  <div class="product-info">
+    <h3>Artisan Bread</h3>
+    <p class="product-price">300 rsd</p>
+    <a href="/bread" class="product-btn">VIEW DETAILS</a>
+  </div>
+</div>
+
+    </div>
+  </div>
+</section>
+
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2>GET IN TOUCH</h2>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <p><strong>Address:</strong> Trg Republike bb, Beograd</p>
+          <p><strong>Phone:</strong> +381 11 123 4567</p>
+          <p><strong>Email:</strong> info@lapetitebakery.rs</p>
+          <p><strong>Working hours:</strong> Mon-Sat: 08:00 - 20:00
+        </p>
+        </div>
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea placeholder="Your Message" rows="3"></textarea>
+          <button type="submit" class="submit-btn">SEND MESSAGE</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+  <div class="container footer-content">
+    <div class="footer-logo">
+      <h3>La Petite Bakery</h3>
+      <p>Artisan sweets made with love.</p>
+    </div>
+    
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <p>Instagram: @lapetitebakery</p>
+      <p>Facebook: /lapetitebakery</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 La Petite Bakery. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>

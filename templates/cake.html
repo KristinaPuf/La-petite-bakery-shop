@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
   <title>Raspberry Cake - La Petite Bakery</title>
 </head>
 <body>
   <div class="container product-detail">
-    <a href="index.html#products" class="back-btn">← Back to Products</a>
+    <a href="{{ url_for('home') }}#products" class="back-btn">Back to Products</a>
     <div class="detail-wrapper">
-      <img src="images/p4.jpeg" alt="Raspberry Cake">
+      <img src="{{ url_for('static', filename='images/p4.jpeg') }}" alt="Raspberry Cake">
       <div class="detail-info">
         <h1>RASPBERRY CAKE</h1>
         <p class="price">450 RSD</p>
