@@ -120,7 +120,7 @@ body {
 
 /* HOVER EFEKAT ZA KARTICE */
 .product-card {
-  position: relative; /* OVO JE KLJUČNO */
+  position: relative; 
   background: #fff;
   border-radius: 15px;
   overflow: hidden;
@@ -135,7 +135,7 @@ body {
   position: absolute;
   top: 15px;
   left: 15px;
-  background-color: #f4d03f; /* Zlatna boja */
+  background-color: #f4d03f; 
   color: #333;
   padding: 5px 12px;
   font-size: 10px;
@@ -176,8 +176,7 @@ body {
 } 
 
 .product-btn {
-  display: inline-block;
-  /* Korišćenje svetlije nijanse tvoje boje (ili dodajemo providnost sa rgba) */
+  display: inline-block; /* Korišćenje svetlije nijanse tvoje boje (ili dodajemo providnost sa rgba) */
   background-color: #d1bfae; 
   color: #fff;
   text-decoration: none;
@@ -192,14 +191,14 @@ body {
 
 .product-btn:hover {
   background-color: transparent;
-  color: #9c7c5d; /* Tekst na hover ostaje ona tvoja osnovna boja */
+  color: #9c7c5d; /* Tekst na hover ostaje osnovna boja */
   border-color: #9c7c5d;
 }
 
 .product-price {
-  color: #5d4d3d; /* Malo tamnija, sofisticiranija braon nijansa */
-  font-family: 'Playfair Display', serif; /* Ili neki elegantan font koji koristiš za naslove */
-  font-size: 1.2rem; /* Malo veće, da se ističe */
+  color: #5d4d3d; 
+  font-family: 'Playfair Display', serif; 
+  font-size: 1.2rem; 
   font-weight: 700;
   margin: 12px 0;
   display: flex;
@@ -208,7 +207,7 @@ body {
   gap: 5px;
 }
 
-/* Opcionalno: Ako želiš da dodaš "RSD" kao manji tekst */
+
 .product-price span {
   font-size: 0.8rem;
   font-weight: 400;
@@ -369,7 +368,7 @@ body {
 .back-btn:hover {
 color: #333;
 text-decoration: none;
-transform: translateX(-5px); /* Mala animacija da se strelica pomeri ulevo kada pređeš mišem */
+transform: translateX(-5px); /* Mala animacija da se strelica pomeri ulevo kada pređem mišem */
 }
 
 .detail-wrapper {
